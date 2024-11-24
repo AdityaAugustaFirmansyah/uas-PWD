@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Menu Dan harga :
+    </h1>
+    <ul>
+        <li>Nasi Goreng : Rp 25000</li>
+        <li>Mie Goreng : Rp 20000</li>
+        <li>Ayam Goreng : Rp 30000</li>
+    </ul>
+    <h1>
+        Syarat Diskon :
+    </h1>
+    <ul>
+        <li>Diskon 10% jika total lebih dari Rp 100.000.</li>
+        <li>Diskon 15% jika total lebih dari Rp 150.000.</li>
+    </ul>
+</body>
+<script>
+    var qtyNasiGoreng = prompt('Jumlah Nasi Goreng')
+    var qtyMieGoreng = prompt('Jumlah Mie Goreng')
+    var qtyAyamGoreng = prompt('Jumlah Ayam Goreng')
+
+    var totalNasiGoreng = qtyNasiGoreng*25000;
+    var totalMieGoreng = qtyMieGoreng*20000;
+    var totalAyamGoreng = qtyAyamGoreng*30000;
+    var totalHarga = totalNasiGoreng+totalMieGoreng+totalAyamGoreng;
+    var discount = 0;
+    if(totalHarga>100000 && totalHarga<150000){
+        discount = 10;
+    }else if(totalHarga>150000){
+        discount = 15;
+    }
+    var hargaDiscount = discount/100*totalHarga
+    var totalHargaDiscount = totalHarga-hargaDiscount;
+    alert("Total Harga (Sebelum Diskon) : "+totalHarga+"\n"+"Diskon : "+discount+"\n"+"Total Harga Diskon : "+totalHargaDiscount)
+</script>
+</html>

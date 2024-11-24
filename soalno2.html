@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+</head>
+<style>
+    td{
+        width: 20%;
+    }
+    .waktu{
+        background-color: #ffffcc;
+    }
+    .senin{
+        background-color: #ffcbcd;
+    }
+    .selasa{
+        background-color: #cdffcd;
+    }
+    .rabu{
+        background-color: #cbccfe;
+    }
+</style>
+<body>
+    <table border="1">
+        <tr>
+            <td class="waktu">waktu</td>
+            <td class="senin">Senin</td>
+            <td class="selasa">Selasa</td>
+            <td class="rabu">Rabu</td>
+        </tr>
+        <tr>
+            <td class="waktu">07:00-08:00</td>
+            <td rowspan="2" class="senin">Matematika</td>
+            <td class="selasa">Bahasa Indonesia</td>
+            <td rowspan="2" class="rabu">Fisika</td>
+        </tr>
+        <tr>
+            <td class="waktu">08:00-09:00</td>
+            <td class="selasa">Kimia</td>
+        </tr>
+        <tr>
+            <td class="waktu">09:00-10:00</td>
+            <td class="senin">Biologi</td>
+            <td class="selasa">Matematika</td>
+            <td class="rabu">Bahasa Inggris</td>
+        </tr>
+        <tr>
+            <td class="waktu">10:00-11:00</td>    
+            <td class="senin">Bahasa Inggris</td>
+            <td colspan="2" class="selasa">prakarya</td>
+        </tr>
+        <tr>
+            <td class="waktu">11:00-12:00</td>    
+            <td colspan="3" class="senin">Seni Budaya</td>
+        </tr>
+        <tr>
+            <td colspan="4" class="waktu">Istirahat</td>
+        </tr>
+    </table>
+</body>
+</html>
